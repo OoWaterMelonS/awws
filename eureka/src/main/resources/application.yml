@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: euraka
+server:
+  port: 9501
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false

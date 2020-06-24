@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="business_web_server" />
+        <module name="user_web_server" />
+        <module name="user_wx_server" />
+        <module name="gateway" />
+        <module name="eureka" />
+        <module name="business_wx_server" />
+        <module name="server" />
+        <module name="business_app_server" />
+        <module name="user_app_server" />
+        <module name="generator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="user_wx" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="business_app_server" options="-parameters" />
+      <module name="business_web_server" options="-parameters" />
+      <module name="business_wx_server" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="generator" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="user_app_server" options="-parameters" />
+      <module name="user_web_server" options="-parameters" />
+      <module name="user_wx_server" options="-parameters" />
+    </option>
+  </component>
+</project>

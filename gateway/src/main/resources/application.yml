@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+#        - id: u
+#          uri: http://127.0.0.1:9001
+#          predicates:
+#            - Path=/system/**
+#        - id: business
+##          uri: http://127.0.0.1:9002
+#          uri: lb://business
+#          predicates:
+#            - Path=/business/**
+
+server:
+  #路由最重要  所以最先开始
+  port: 9500
+#eureka:
+#  client:
+#    fetch-registry: false
+#    register-with-eureka: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#路由转发
